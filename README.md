@@ -1,1 +1,28 @@
 # hw2_bootstrap
+## command used in this lab
+- git add . 
+- git checkout -b develop
+- git add .
+- git commit -m "การสร้างโปรเจคเริ่มต้น"
+- git checkout -b feature/home
+- git add .
+- git commit -m "ใส่เนื้อหา index และงานbootstrapที่แก้แล้ว" 
+- git checkout -b feature/details
+- git add .
+- git commit -m "เพิ่มเนื้อหาdetails ที่มีbootstrapแล้ว"
+- git checkout -b feature/contact
+- git add .
+- git commit -m "เพิ่มเนื้อหา contactที่ใส่bootstrapแล้ว"
+- git checkout -b feature/css
+- git add .
+- git commit -m "เพิ่ม styles/css"
+- git add screenshot.pdf
+- git commit -m "เพิ่ม screenshot.pdf"
+- git add README.md
+- git commit -m "git command used in this lab"
+- git checkout develop
+- git merge feature/home
+- git merge feature/contact
+- git merge feature/details
+- git merge feature/css
+- git push origin development
