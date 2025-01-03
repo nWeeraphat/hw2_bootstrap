@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา - สถานที่ท่องเที่ยวจังหวัดฉะเชิงเทรา</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+        }
+    
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+    
+        .modal-header {
+            background-color: #131010;
+            color: white;
+        }
+    
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    
+        footer {
+            background-color: #131010;
+            color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+    
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #131010;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">CHACHOENGSAO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="details.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Modal Trigger -->
+    <div class="container my-5 text-center">
+        <h2>ส่งข้อความถึงเรา</h2>
+        <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
+            เปิดฟอร์มติดต่อ
+        </button>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">ส่งข้อความถึงเรา</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label">ชื่อ-นามสกุล *</label>
+                            <input type="text" class="form-control" id="fullname" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">อีเมล *</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel" class="form-label">เบอร์โทรศัพท์</label>
+                            <input type="tel" class="form-control" id="tel" pattern="[0-9]{10}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">ข้อความ *</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ข้อมูลติดต่อ</h5>
+                    <p>111 หมู่ 1 , ตำบลบางคล้า ,ฉะเชิงเทรา 24110</p>
+                    <p>โทร: 012-3456789</p>
+                    <p>อีเมล: info@chonburi.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>ลิงค์เมนูสำคัญ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">หน้าแรก</a></li>
+                        <li><a href="place.html">สถานที่ท่องเที่ยว</a></li>
+                        <li><a href="contact.html">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>ติดตามเรา</h5>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Twitter</a><br>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p>&copy; 2024 สถานที่ท่องเที่ยวจังหวัดฉะเชิงเทรา. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
